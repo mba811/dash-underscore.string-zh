@@ -18,11 +18,13 @@ from mako.template import Template
 from pyquery import PyQuery
 
 currentPath = os.path.join(os.path.dirname(os.path.realpath(__file__)))
-output = "underscore-zh.docset"
 name = "underscore.string.js"
-appName = "dash-underscore-zh"
-tarFileName = "underscore.string-zh.tgz"
-feedName = "underscore.string-zh.xml"
+
+baseName = "underscore.string-zh"
+output = baseName + ".docset"
+appName = "dash-" + baseName
+tarFileName = baseName + ".tgz"
+feedName = baseName + ".xml"
 
 url = "http://www.css88.com/doc/underscore.string2.3.0/"
 content = urllib2.urlopen(url).read()
