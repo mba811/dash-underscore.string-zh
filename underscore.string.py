@@ -22,6 +22,7 @@ output = "underscore-zh.docset"
 name = "underscore.string.js"
 appName = "dash-underscore-zh"
 tarFileName = "underscore.string-zh.tgz"
+feedName = "underscore.string-zh.xml"
 
 url = "http://www.css88.com/doc/underscore.string2.3.0/"
 content = urllib2.urlopen(url).read()
@@ -130,6 +131,6 @@ feedTemplate = Template('''<entry>
 fout = open(os.path.join(currentPath, "dist", tarFileName), "rb")
 sha1Value = hashlib.sha1(fout.read()).hexdigest()
 fout.close()
-fin = open(os.path.join(currentPath, "underscore-zh.xml"), "w")
+fin = open(os.path.join(currentPath, feedName), "w")
 fin.write(feedTemplate.render(sha1Value = sha1Value, appName = appName, tarFileName = tarFileName))
 fin.close()
