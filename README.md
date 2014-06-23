@@ -1,7 +1,7 @@
 dash-underscore.string-zh
 =========================
 
-[underscore.string](http://epeli.github.io/underscore.string/) 中文文档 for [dash](http://kapeli.com/dash)
+[underscore.string.js](http://epeli.github.io/underscore.string/) 中文文档 for [dash](http://kapeli.com/dash)
 
 ## Usage
 
